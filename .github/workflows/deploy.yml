@@ -1,0 +1,38 @@
+name: Deploy Zensical site
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupération du projet
+        uses: actions/checkout@v4
+
+      - name: Installation de Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Installation de Zensical
+        run: pip install zensical
+
+      - name: Build du site
+        run: zensical build
+
+      - name: Upload du site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Déploiement GitHub Pages
+        uses: actions/deploy-pages@v4
