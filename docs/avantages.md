@@ -1,23 +1,3 @@
 # Quels sont leurs intérêts ?
 
-Les workflows GitHub offrent plusieurs avantages.
-
-## Gain de temps
-
-Les tâches répétitives sont réalisées automatiquement.
-
-## Réduction des erreurs
-
-Les vérifications automatiques permettent de détecter rapidement les problèmes.
-
-## Meilleure qualité
-
-Le projet reste plus fiable grâce aux tests automatiques.
-
-## Collaboration facilitée
-
-Tous les membres de l'équipe suivent les mêmes procédures.
-
-## Déploiement rapide
-
-Les nouvelles versions peuvent être publiées automatiquement.
+Les principaux intérêts des workflows GitHub sont l’automatisation et le gain de temps. Ils permettent d’exécuter automatiquement des tâches répétitives comme les tests, les vérifications de qualité du code ou les déploiements. Ils contribuent aussi à réduire les erreurs humaines, à garantir que le code respecte les standards du projet et à améliorer la collaboration entre les membres de l’équipe grâce à des contrôles systématiques avant l’intégration du code.
